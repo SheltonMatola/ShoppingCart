@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=deployed_code" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_bag" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3" class="logo-icon">
+                <path d="M446.67-163.67V-461l-260-150.33V-314l260 150.33Zm66.66 0 260-150.33v-298l-260 150.89v297.44ZM480-518l256.33-149L480-815.33 223-667l257 149ZM153.33-256q-15.83-9.28-24.58-24.48-8.75-15.19-8.75-33.19v-332.66q0-18 8.75-33.19 8.75-15.2 24.58-24.48l293.34-169q15.88-9 33.44-9 17.56 0 33.22 9l293.34 169q15.83 9.28 24.58 24.48 8.75 15.19 8.75 33.19v332.66q0 18-8.75 33.19-8.75 15.2-24.58 24.48L513.33-87q-15.88 9-33.44 9-17.56 0-33.22-9L153.33-256ZM480-480Z"/>
+            </svg>
+        </div>
+
+        <div class="shopping-bag">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3" class="shopping-bag">
+                <path d="M226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-506.66q0-27 19.83-46.84Q199.67-720 226.67-720h100v-6.67q0-64 44.66-108.66Q416-880 480-880t108.67 44.67q44.66 44.66 44.66 108.66v6.67h100q27 0 46.84 19.83Q800-680.33 800-653.33v506.66q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm0-66.67h506.66v-506.66h-100v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66H393.33v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66h-100v506.66ZM393.33-720h173.34v-6.67q0-36.33-25.17-61.5-25.17-25.16-61.5-25.16t-61.5 25.16q-25.17 25.17-25.17 61.5v6.67ZM226.67-146.67v-506.66 506.66Z"/>
+
+                <!-- <circle cx="18" cy="6" r="6" fill="#f00" stroke="none" /> -->
+                <text id="bag-count" x="480" y="-320" dominant-baseline="middle" text-anchor="middle" font-size="400" fill="#fff" font-weight="bold">0</text>
+            </svg>
+            <div id="cart-panel" class="cart-panel" aria-hidden="true">
+                <div class="cart-panel-header">
+                    <h3>Cart</h3>
+                    <button id="cart-close" class="cart-close" aria-label="Close">×</button>
+                </div>
+                <div id="cart-items" class="cart-items"></div>
+                <div class="cart-summary">
+                    <div class="cart-subtotal-row">
+                        <span>Items Subtotal</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="cart-total-row">
+                        <strong>Total</strong>
+                        <strong id="cart-total">$0.00</strong>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Items</h1>
+    </header>
+
+    <main>
+        <div class="item-list">
+            <div class="buttons">
+                <img src="Imgs%20%26%20Icons/Nike Dunk Low (GS) Shadow - 5_5Y _ COLLEGE GREY_BLACK-WHITE.jpg" alt="first item">
+                <p class="shoe-title">Nike Dunk Low (GS) Shadow</p>
+                <p class="shoe-description">Description</p>
+                <p class="shoe-price">$95.00</p>
+                <a href="#" class="add-to-bag" data-product-id="0001">Add to Bag</a>
+            </div>
+
+            <div class="buttons">
+                <img src="Imgs%20%26%20Icons/Nike Dunk Low Next Nature Sneakers - White.jpg" alt="second item">
+                <p class="shoe-title">Nike Dunk Low Next Nature Sneakers</p>
+                <p class="shoe-description">Description</p>
+                <p class="shoe-price">$120.00</p>
+                <a href="#" class="add-to-bag" data-product-id="0002">Add to Bag</a>
+            </div>
+
+            <div class="buttons">
+                <img src="Imgs%20%26%20Icons/Nike Shoes | Nike Dunk Low Twist | Color_ Brown_White | Size_ 8_5.jpg" alt="third item">
+                <p class="shoe-title">Nike Dunk Low Twist</p>
+                <p class="shoe-description">Description</p>
+                <p class="shoe-price">$65.00</p>
+                <a href="#" class="add-to-bag" data-product-id="0003">Add to Bag</a>
+            </div>
+
+            <div class="buttons">
+                <img src="Imgs%20%26%20Icons/Nike Shoes | Nike Dunk Panda | Color_ Black | Size_ 9.jpg" alt="fourth item">
+                <p class="shoe-title">Nike Dunk Panda</p>
+                <p class="shoe-description">Description</p>
+                <p class="shoe-price">$120.00</p>
+                <a href="#" class="add-to-bag" data-product-id="0004">Add to Bag</a>
+            </div>
+
+            <div class="buttons">
+                <img src="Imgs%20%26%20Icons/Nike Shoes | Nike Mens Dunk Low Retro Se 'Nola' Sail Bone Hv5750-133 Size 12 | Color_ Cream_Purple | Size_ 12.jpg" alt="fifth item">
+                <p class="shoe-title">Nike Dunk Low Retro Se 'Nola' Sail Bone</p>
+                <p class="shoe-description">Description</p>
+                <p class="shoe-price">$120.00</p>
+                <a href="#" class="add-to-bag" data-product-id="0005">Add to Bag</a>
+            </div>
+
+        </div>
+    </main>
+
+    <script type="module" src="js/controller/controller.js"></script>
+</body>
+</html>
